@@ -1,0 +1,35 @@
+[project]
+name = "src"
+version = "0.1.0"
+description = "Hands on lab for Microsoft Agent Framework with Microsoft Foundry"
+readme = "README.md"
+requires-python = ">=3.13, <4.0.0"
+dependencies = [
+    "azure-identity==1.25.3",
+    "aiohttp==3.13.3",
+    "python-dotenv==1.1.1",
+    "agent-framework-azure-ai==1.0.0rc6",
+    "agent-framework-core==1.0.1",
+    "agent-framework-devui==1.0.0b260409",
+    "agent-framework-foundry==1.0.1",
+    "azure-monitor-opentelemetry==1.8.7",
+    "pydantic==2.12.5",
+    "azure-ai-projects==2.0.1",
+    "agent-framework-orchestrations==1.0.0b260409",
+    "mcp>=1.27.0",
+    "azure-ai-agents==1.2.0b5"
+]
+
+[tool.uv]
+prerelease = "allow"
+
+# Explicit package discovery to avoid setuptools flat-layout error.
+# We deliberately ship the two top-level packages used by the runtime.
+# If we later refactor into a src/ layout, this section can be removed
+# in favor of a find directive pointing at src/m365_agent_app.
+[tool.setuptools]
+packages = []
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

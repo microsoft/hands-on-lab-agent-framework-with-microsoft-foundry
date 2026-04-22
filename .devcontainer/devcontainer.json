@@ -1,0 +1,45 @@
+{
+  "name": "Agent Framework - Lab",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13-bookworm",
+  "features": {
+    "azure-cli": {
+          "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/terraform:latest": {
+          "version": "latest",
+          "tflint": "latest"
+    },
+    "ghcr.io/va-h/devcontainers-features/uv:1": {}
+  },
+  "forwardPorts": [18888,18889, 8090],
+  "portsAttributes": {
+    "43111": {
+      "onAutoForward": "ignore"
+    }
+  },
+  "otherPortsAttributes": {
+    "onAutoForward": "ignore"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "github.copilot",
+        "github.copilot-chat",
+        "humao.rest-client",
+        "ms-python.vscode-pylance",
+        "charliermarsh.ruff",
+        "ms-python.debugpy",
+        "hashicorp.terraform"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": "explicit"
+        },
+        "python.languageServer": "Pylance"
+      }
+    }
+  }
+}

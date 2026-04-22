@@ -1,14 +1,13 @@
-# Project
+# Agent Framework with Microsoft Foundry - Hands-On Lab
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+Welcome to this hands-on lab! You will learn how to build agentic applications using the Agent Framework with Microsoft Foundry.
 
-As the maintainer of this project, please make a few updates:
+## 📚 Workshop
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+Access the full workshop documentation: [Workshop Guide](docs/workshop.md)
+
+Or view it online: [https://aka.ms/agf-lab](https://aka.ms/agf-lab)
+
 
 ## Contributing
 
