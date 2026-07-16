@@ -16,7 +16,7 @@ dependencies = [
     "pydantic==2.12.5",
     "azure-ai-projects==2.0.1",
     "agent-framework-orchestrations==1.0.0b260409",
-    "mcp>=1.27.0",
+    "mcp>=1.28.1",
     "azure-ai-agents==1.2.0b5"
 ]
 
